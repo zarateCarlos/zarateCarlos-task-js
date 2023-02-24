@@ -103,7 +103,7 @@ main {
     font-size: 10px;
 }
 
-.cards {
+.events-container {
     width: 75%;
     margin: 0 auto;
     display: flex;
@@ -114,15 +114,20 @@ main {
 
 .card {
     border: 1px solid black;
-    width: 200px;
-    height: 240px;
+    width: 210px;
+    height: 310px;
     margin-bottom: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .img-card img {
-    width: 180px;
+    width: 100%;
+    margin: 0 auto;
     height: 120px;
-    margin: 10px;
+
 }
 
 .img-card img:hover {
@@ -145,7 +150,7 @@ main {
 .card-footer {
     display: flex;
     justify-content: space-between;
-    margin: 20px 15px;
+
 
 }
 
@@ -226,7 +231,13 @@ td {
     font-size: 10px;
     padding: 0 5px;
 }
-
+.cards{
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
 .card-detalle {
     display: flex;
     margin: 50px;
@@ -234,7 +245,7 @@ td {
     height: 400px;
     padding: 20px;
     align-content: space-between;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     align-items: center;
     border: 1px solid black;
 }
@@ -250,7 +261,8 @@ td {
     margin: 10px;
     box-shadow: -5px 3px 4px 2px rgba(0, 0, 0, 0.305)
 }
-.desc-card-detalle{
+
+.desc-card-detalle {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -266,7 +278,7 @@ td {
 @media only screen and (min-width:768px) and (max-width:1022px) {
     .categorias {
         flex-direction: column;
-      
+
 
     }
 }
@@ -276,12 +288,13 @@ td {
     .card-detalle {
         width: 300px;
         flex-direction: column;
-
     }
+
     .img-card-detalle img {
-        width: 250px;
+        width: 280px;
         height: 220px;
     }
+
     .desc-card-detalle {
         border-bottom: 1px solid white;
         justify-content: center;
