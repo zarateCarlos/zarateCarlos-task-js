@@ -26,42 +26,21 @@
     <div class="nav-2">
 
         <a href="./index.html">&lt;</a>
-                <h1>Upcoming Events</h1>
-                <a href="./pastEvents.html">&gt;</a>
+        <h1>Upcoming Events</h1>
+        <a href="./pastEvents.html">&gt;</a>
 
     </div>
     <main>
         <form>
             <div class="categorias">
 
-                <div class="categoria check">
+                <div class="categoria check" id="categorias-f"> </div>
 
-                    <div class="opciones-form">
-                        <input type="checkbox" id="categorias1" name="categorias">
-                        <label for="categorias1">Category</label>
-                    </div>
-                    <div class="opciones-form">
-                        <input type="checkbox" id="categorias2" name="categorias">
-                        <label for="categorias2">Category</label>
-                    </div>
-                    <div class="opciones-form">
-                        <input type="checkbox" id="categorias3" name="categorias">
-                        <label for="categorias3">Category</label>
-                    </div>
-                    <div class="opciones-form">
-                        <input type="checkbox" id="categorias4" name="categorias">
-                        <label for="categorias4">Category</label>
-                    </div>
-                    <div class="opciones-form">
-                        <input type="checkbox" id="categorias5" name="categorias">
-                        <label for="categorias5">Category</label>
-                    </div>
 
-                </div>
                 <div class="categoria buscar">
 
-                    <input type="search">
-                    <button><img class="lupa" src="./img/lupa.png" alt="buscar"></button>
+                    <input type="search" id="miInputSearch">
+                    <button id="miBotonSearch"><img class="lupa" src="./img/lupa.png" alt="buscar"></button>
 
                 </div>
 
@@ -69,6 +48,7 @@
             </div>
 
         </form>
+
 
         <div class="events-container" id="up-coming"></div>
 
@@ -84,7 +64,8 @@
             <h2>Cohort</h2>
         </div>
     </footer>
-<script src="./script/upEvents.js"></script>
+    <script src="./script/data.js"></script>
+    <script src="./script/upEvents.js"></script>
 </body>
 
 </html>
