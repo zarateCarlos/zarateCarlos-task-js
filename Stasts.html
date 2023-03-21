@@ -26,88 +26,56 @@
     <div class="nav-2">
 
         <a href="./Contact.html">&lt;</a>
-                <h1>Stats</h1>
-                <a href="#">&gt;</a>
+        <h1>Stats</h1>
+        <a href="#">&gt;</a>
 
     </div>
     <main class="contenedor-stats">
-        <table>
+
+        <table id="miTabla">
             <tr>
                 <th colspan="3">Events statistics</th>
             </tr>
-            <tr>
-                <td>Events with the highest percentage of attendace</td>
-                <td>Events with the lowest percentage of attendace</td>
-                <td>Event with larger capacity</td>
+            <tr class="tablaLinda">
+                <th>Events with the highest percentage of attendace</th>
+                <th>Events with the lowest percentage of attendace</th>
+                <th>Event with larger capacity</th>
             </tr>
-            <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+            <tr class="mi-clases">
+                <td class="altoporcentaje"></td>
+                <td class="bajoPorcentaje"></td>
+                <td class="capacidadMaxima"></td>
+
             </tr>
 
             <tr>
                 <th colspan="3">Upcoming events statistics by category</th>
             </tr>
-            <tr>
-                <td>Categories</td>
-                <td>Revenues</td>
-                <td>Percentage of attendance</td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+
+            <tr class="tablaLinda">
+                <th>Categories</th>
+                <th>Revenues</th>
+                <th>Percentage of attendance</th>
             </tr>
 
-
+            <tbody id="tbody1">
+                <!-- contenido de tbody1 -->
+            </tbody>
             <tr>
                 <th colspan="3">Past Events statistic by category</th>
             </tr>
-            <tr>
-                <td>Categories</td>
-                <td>Revenues</td>
-                <td>Percentage of attendance</td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
-                <td>&nbsp;</td>
+
+            <tr class="tablaLinda">
+                <th>Categories</th>
+                <th>Revenues</th>
+                <th>Percentage of attendance</th>
             </tr>
 
-
-
+            <tbody id="tbody2">
+                <!-- contenido de tbody2 -->
+            </tbody>
         </table>
+
 
     </main>
 
@@ -121,7 +89,7 @@
             <h2>Cohort</h2>
         </div>
     </footer>
-
+    <script src="./script/stats.js"></script>
 </body>
 
 </html>

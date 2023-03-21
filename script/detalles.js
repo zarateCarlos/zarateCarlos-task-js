@@ -1,23 +1,37 @@
-let query = location.search
+let URLapi = "https://mindhub-xj03.onrender.com/api/amazing"
 
 
-let parametro = new URLSearchParams(query)
+async function traer() {
+    let response = await fetch(URLapi);
+    datosAPI = await response.json();
+    console.log(datosAPI)
+}
 
-
-
-const id = parametro.get("id")
-
-
-
-let info = data.events.find(evento => evento._id == id)
-
-
+async function iniciar() {
+    await traer();
 
 
 
-let contenedor = document.getElementById("card-detalle")
+    let query = location.search
 
-contenedor.innerHTML = `<div class="img-card-detalle">
+
+    let parametro = new URLSearchParams(query)
+
+
+
+    const id = parametro.get("id")
+
+
+
+    let info = datosAPI.events.find(evento => evento._id == id)
+
+
+
+
+
+    let contenedor = document.getElementById("card-detalle")
+
+    contenedor.innerHTML = `<div class="img-card-detalle">
 <img src="${info.image}" alt="${info.name}">
 </div>
 <div class="desc-card-detalle">
@@ -37,3 +51,5 @@ contenedor.innerHTML = `<div class="img-card-detalle">
 
 </div>
 `
+}
+iniciar()
